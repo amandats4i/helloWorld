@@ -10,13 +10,19 @@ public class HelloController {
 	
 	@GetMapping
 	public String Hello () {
-		return "<i> <b> Hello Turma 68!!! </i> </b>";			
+		return "<i> <b> Hello World :D </i> </b>";			
 		
 	}
 	// Esse é SUBCAMINHO do caminho principal que é /hello
-	@GetMapping ("/top")
-	public String top() {
-		return "<i> <b> Turma 68 é TOP!!! </i> </b>";
+	@GetMapping ("/bsm")
+	public String bsm() {
+		return "<b> Essas são as BSM's da Generation Brasil: Orientação ao futuro, Mentalidade de Crescimento, Responsabilidade Pessoal e Persistência. ";
+				
+	}
+	
+	@GetMapping ("/objetivos")
+	public String objetivos() {
+		return "<b> Esses são meus objetivos de aprendizagem essa semana: MySQL, Spring Boot e Métodos HTTP </b>"; 
 	}
 	
 
